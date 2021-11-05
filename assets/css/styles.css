@@ -1,0 +1,125 @@
+/*==================== GOOGLE FONTS =====================*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/*==================== VARIABLES CSS =====================*/
+:root {
+    --header-height: ;
+
+/*==================== Colors ============================*/
+    --hue-color: ; 
+
+    --first-color: ;
+    --first-color-second: ;
+    --first-color-alt: ;
+    --first-color-lighter: ;
+    --title-color: ;
+    --text-color: ;
+    --text-color-light: ;
+    --input-color: ;
+    --body-color: ;
+    --container-color: ;
+
+/*==================== Font and typography ================*/
+    --body-font: ;
+
+    --big-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
+    
+/*==================== Font weight ========================*/
+    --font-medium: ;
+    --font-semi-bold: ;
+
+/*==================== Margenes Bottom ====================*/
+    
+    --mb-0-25: ;
+    --mb-0-5: ;
+    --mb-0-75: ;
+    --mb-1: ;
+    --mb-1-5: ;
+    --mb-2: ;
+    --mb-2-5: ;
+    --mb-3: ;
+
+/*====================z index =============================*/
+    --z-tooltip: ;
+    --z-fixed: ;
+    --z-modal: ;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: ;
+        --h1-font-size: ;
+        --h2-font-size: ;
+        --h3-font-size: ;
+        --normal-font-size: ;
+        --small-font-size: ;
+        --smaller-font-size: ;
+    }
+}
+
+/*==================== Variables Dark theme ===============*/
+
+
+/*==================== Button Dark/Light ==================*/
+
+
+/*==================== BASE ===============================*/
+
+
+/*==================== REUSABLE CSS CLASSES ===============*/
+
+
+/*==================== LAYOUT =============================*/
+
+
+/*==================== NAV ================================*/
+
+
+/* show menu */
+
+
+/* Active link */
+
+
+/* Change background header */
+
+
+/*==================== HOME ===============================*/
+
+
+/*==================== BUTTONS ============================*/
+
+
+/*==================== ABOUT ==============================*/
+
+
+/*==================== SKILLS =============================*/
+
+
+/*==================== QUALIFICATION ======================*/
+
+
+/*==================== SERVICES ===========================*/
+
+
+/* Active Modal */
+
+
+/*==================== PORTFOLIO ==========================*/
+
+/*==================== PROJECT IN MIND ====================*/
+
+/*==================== CONTACT ME =========================*/
+
+/*==================== FOOTER =============================*/
+
+/*==================== SCROLL UP ==========================*/
+
+/*==================== SCROLL BAR =========================*/
+
+/*==================== MEDIA QUERIES ======================*/
