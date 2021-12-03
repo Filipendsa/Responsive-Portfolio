@@ -1,67 +1,163 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Filipe Nogueira da Silva</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            
-        </header>
-        <main class="main">
-            <section class="home section" id="home">
-                
-            </section>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-            <section class="about section" id="about">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        
-            </section>
+    <title>Filipe Nogueira da Silva</title>
+</head>
 
-            <section class="skills section" id="skills">
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="navLogo">Filipe</a>
+
+            <div class="navMenu" id="nav-Menu">
+                <ul class="navList grid">
+                    <li class="navItem">
+                        <a href="#home" class="navLink">
+                            <i class="uil uil-estate navIcon"></i> Home
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#sobre" class="navLink">
+                            <i class="uil uil-user navIcon"></i> Sobre
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#habilidades" class="navLink">
+                            <i class="uil uil-file-plus-alt navIcon"></i> Habilidades
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#servicos" class="navLink">
+                            <i class="uil uil-briefcase-alt navIcon"></i> Serviços
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#portfolio" class="navLink">
+                            <i class="uil uil-mountains-sun navIcon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#contato" class="navLink">
+                            <i class="uil uil-message navIcon"></i> Contato
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times navClose" id="nav-Close"></i>
+            </div>
+            <div class="navBtns">
+                <div class="navToggle" id="nav-Toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="homeContainer container grid">
+                <div class="homeContent grid">
+                    <div class="homeSocial">
+                        <a href="https://www.linkedin.com/in/filipe-nogueira07/" target="_blank" class="homeSocialIcon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/Filipendsa" target="_blank" class="homeSocialIcon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://dribbble.com/Filipendsa" target="_blank" class="homeSocialIcon">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+                    </div>
+                    <div class="homeImg">
+                        <svg class="homeSVG" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="homeSvgImg" x='12' y='18' href="assets/img/Perfil.png"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="homeData">
+                        <h1 class="homeTitle">Hey! Sou o Filipe</h1>
+                        <h3 class="homeSubtitle">Full Stack developer</h3>
+                        <p class="homeDescricao">
+                            A preencher
+                        </p>
+                        <a href="#contato" class="button btnFlex">
+                            Entre em Contato!<i class="uil uil-message btnIcon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="homeScroll">
+                    <a href="#sobre" class="homeScrollBtn btnFlex">
+                        <i class="uil uil-mouse-alt homeScrollMouse"></i>
+                        <span class="homeScrollName">Continue rolando</span>
+                        <i class="uil uil-angle-down homeScrollArrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
 
 
-            </section>
+        </section>
 
-            <section class="qualification section">
-
-
-            </section>
-
-            <section class="services section" id="services">
-                
-
-            </section>
-
-            <section class="portfolio section" id="portfolio">
-                
-
-            </section>
-
-            <section class="project section">
+        <section class="skills section" id="skills">
 
 
-            </section>
+        </section>
+
+        <section class="qualification section">
 
 
-            <section class="contact section" id="contact">
+        </section>
+
+        <section class="services section" id="services">
 
 
-            </section>
-        </main>
+        </section>
 
-        <footer class="footer">
+        <section class="portfolio section" id="portfolio">
 
-            
-        </footer>
 
-        
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+        </section>
+
+        <section class="project section">
+
+
+        </section>
+
+
+        <section class="contact section" id="contact">
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+
+
+    </footer>
+
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
