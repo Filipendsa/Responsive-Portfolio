@@ -75,6 +75,7 @@ html {
 }
 
 body {
+    font: var(--body-font);
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-color);
     font-size: var(--normal-font-size);
@@ -280,7 +281,7 @@ img {
 }
 
 .homeScroll {
-    /*display: none;*/
+    display: none;
 }
 
 .homeScrollBtn {
@@ -333,6 +334,44 @@ img {
 }
 /*==================== ABOUT ==============================*/
 
+.aboutImg{
+    width: 200px;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutDescription{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.aboutInfo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.aboutInfoTitle{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.aboutInfoName{
+    font-size: var(--smaller-font-size);
+}
+
+.aboutInfoTitle,
+.aboutInfoName{
+    display: block;
+    text-align: center;
+}
+
+.aboutBtn{
+    display: flex;
+    justify-content: center;
+}
 /*==================== SKILLS =============================*/
 
 /*==================== QUALIFICATION ======================*/
