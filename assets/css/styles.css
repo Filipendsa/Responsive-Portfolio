@@ -372,8 +372,113 @@ img {
     display: flex;
     justify-content: center;
 }
-/*==================== SKILLS =============================*/
 
+/*==================== SKILLS =============================*/
+.skillsContainer{
+    row-gap: 0;
+}
+
+.skillsHeader{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skillsIcon,
+.skillsArrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skillsIcon{
+    margin-right: var(--mb-0-75);
+}
+
+.skillsTitle{
+font-size: var(--h3-font-size);
+}
+
+.skillsSubtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skillsArrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skillsList{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skillsTitles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillsName{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skillsBar,
+.skillsPercentage{
+    height: 5px;
+}
+
+.skillsBar{
+    background-color: var(--first-color-lighter);
+}
+
+.skillsPercentage{
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skillsHtml{
+    width: 100%;
+}
+
+.skillsJS{
+    width: 90%;
+}
+
+.skillsReact{
+    width: 30%;
+}
+
+.skillsPhp{
+    width: 100%;
+}
+
+.skillsNode{
+    width: 70%;
+}
+
+
+.skillsTypescript{
+    width: 100%;
+}
+
+.skillsAngular{
+    width: 100%;
+}
+
+
+.skillsMysql{
+    width: 60%;
+}
+
+.skillsC{
+    width: 70%;
+}
+
+.skillsCcharp,.skillsDotnet,.skillsSqlserver,.skillsPython,.skillsCSS{
+    width: 80%;
+}
 /*==================== QUALIFICATION ======================*/
 
 /*==================== SERVICES ===========================*/
