@@ -332,6 +332,21 @@ img {
     display: inline-flex;
     align-items: center;
 }
+
+.btnSmall{
+    padding: .75rem 1rem;
+}
+
+.btnLink{
+    padding: 0;
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.btnLink:hover{
+    background-color: transparent;
+    color: var(--first-color-alt);
+}
 /*==================== ABOUT ==============================*/
 
 .aboutImg{
@@ -417,6 +432,7 @@ font-size: var(--h3-font-size);
 .skillsTitles{
     display: flex;
     justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
 }
 
 .skillsName{
@@ -427,6 +443,7 @@ font-size: var(--h3-font-size);
 .skillsBar,
 .skillsPercentage{
     height: 5px;
+    border-radius: .25rem;
 }
 
 .skillsBar{
@@ -438,7 +455,7 @@ font-size: var(--h3-font-size);
     background-color: var(--first-color);
 }
 
-.skillsHtml{
+.skillsHtml,.skillsPhp,.skillsTypescript,.skillsAngular{
     width: 100%;
 }
 
@@ -450,39 +467,198 @@ font-size: var(--h3-font-size);
     width: 30%;
 }
 
-.skillsPhp{
-    width: 100%;
-}
-
-.skillsNode{
-    width: 70%;
-}
-
-
-.skillsTypescript{
-    width: 100%;
-}
-
-.skillsAngular{
-    width: 100%;
-}
-
-
 .skillsMysql{
     width: 60%;
 }
 
-.skillsC{
+.skillsC,.skillsNode{
     width: 70%;
 }
 
 .skillsCcharp,.skillsDotnet,.skillsSqlserver,.skillsPython,.skillsCSS{
     width: 80%;
 }
+
+.skillsClose .skillsList{
+     height: 0;
+     overflow: hidden;
+}
+
+.skillsOpen .skillsList{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skillsOpen .skillsArrow{
+    transform: rotate(-180deg);
+}
 /*==================== QUALIFICATION ======================*/
+
+.qualificationTabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+
+.qualificationButton{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.qualificationButton:hover{
+    color: var(--first-color);
+}
+
+.qualificationIcon{
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.qualificationData{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualificationTitle{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualificationSubtitle{
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.qualificationCalendar{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.qualificationRounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.qualificationLine{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+    display: none;
+}
+
+.qualificationActive[data-content]{
+    display: block;
+}
 
 /*==================== SERVICES ===========================*/
 
+.servicesContainer{
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.servicesContent{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+
+.servicesContent:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+}
+
+.servicesIcon{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+
+.servicesTitle{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+}
+
+.servicesButton{
+    cursor: pointer;
+    font-size: var(--small-font-size);
+}
+
+.servicesButton:hover .btnIcon{
+    transform: translate(.25rem);
+}
+
+.servicesModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;    
+    transition: .3s;
+}
+
+.servicesModalContent{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.servicesModal-services{
+    row-gap: 1rem;
+}
+
+.servicesModal-service{
+    display: flex;
+}
+
+.servicesModalTitle{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.servicesModalClose{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.servicesModalIcon{
+    color: var(--first-color);
+    margin-right: var(--mb-0-25);
+}
+
+.activeModal{
+    opacity: 1;
+    visibility: visible;
+}
 /*==================== PORTFOLIO ==========================*/
 
 /*==================== PROJECT IN MIND ====================*/
