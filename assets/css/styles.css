@@ -705,9 +705,10 @@ font-size: var(--h3-font-size);
 }
 
 .portfolioImg{
+    display: block;
+    margin: auto;
     width: 265px;
     border-radius: .5rem;
-    justify-content: center;
 }
 
 .portfolioTitle{
