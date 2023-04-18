@@ -3,10 +3,10 @@
 
 /*==================== VARIABLES CSS =====================*/
 :root {
-    --header-height: ;
+    --header-height: 3rem;
 
     /*==================== Colors ============================*/
-    --hue-color: 230;
+    --hue-color: 230; /* purple=250  green=142 blue=230 pink=340*/
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -18,6 +18,8 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /*==================== Font and typography ================*/
     --body-font: 'Poppins', sans-serif;
@@ -63,6 +65,16 @@
     }
 }
 
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+.change-theme:hover{
+    color: var(--first-color);
+}
+
 /*==================== BASE ===============================*/
 * {
     box-sizing: border-box;
@@ -106,7 +118,22 @@ img {
 
 /*==================== Variables Dark theme ===============*/
 
+body.dark-theme{
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
 /*==================== Button Dark/Light ==================*/
+
+.navBtns{
+    display: flex;
+    align-items: center;
+}
 
 /*==================== REUSABLE CSS CLASSES ===============*/
 .section {
@@ -228,6 +255,14 @@ img {
 
 .showMenu {
     bottom: 0;
+}
+
+.active-link{
+    color: var(--first-color);
+}
+
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
 /*==================== HOME ===============================*/
@@ -661,14 +696,425 @@ font-size: var(--h3-font-size);
 }
 /*==================== PORTFOLIO ==========================*/
 
-/*==================== PROJECT IN MIND ====================*/
+.portfolioContainer{
+    overflow: initial;
+}
 
+.portfolioContent{
+    padding: 0 1.5rem;
+}
+
+.portfolioImg{
+    width: 265px;
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+.portfolioTitle{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolioDesciption{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolioBtn:hover .btnIcon{
+    transform: translate(.25rem);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: ' ' !important;
+}
+
+.swiperPortfolioIcon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color) !important;
+}
+
+.swiper-button-next,
+.swiper-pagination-bullet,
+.swiper-button-prev{
+    outline: none;
+}
 /*==================== CONTACT ME =========================*/
+
+.contactContainer{
+    row-gap: 3rem;
+}
+
+.contactInfo{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contactIcon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contactTitle{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contactSubtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contactContent{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.contactLabel{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contactInput{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding:  .25rem .5rem .5rem 0;
+}
 
 /*==================== FOOTER =============================*/
 
+.footer{
+    padding-top: 2rem;
+}
+
+.footerContainer{
+row-gap: 3.5rem;
+}
+
+.footerBg{
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+
+.footerTitle{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footerSubtitle{
+    font-size: var(--small-font-size);
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footerLink:hover{
+    color: var(--first-color-lighter);
+}
+
+.footerSocial{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footerSocial:hover{
+    color: var(--first-color-lighter);
+}
+
+.footerCopy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+}
+
+.footerTitle,
+.footerSubtitle,
+.footerLink,
+.footerSocial{
+    color: #fff;
+}
 /*==================== SCROLL UP ==========================*/
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup:hover{
+    background-color: var(--first-color-alt);
+}
+
+.scrollupIcon{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 
 /*==================== SCROLL BAR =========================*/
 
+.showScroll{
+    bottom: 5rem;
+}
+
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--text-color-light);
+}
+
 /*==================== MEDIA QUERIES ======================*/
+
+@media screen and (max-width:350px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    .navMenu{
+        padding: 2rem .25rem 4rem;
+    }
+    .navList{
+        column-gap: 0;
+    }
+    .homeContent{
+        grid-template-columns:  .25fr 3fr;
+    }
+    .homeSVG{
+        width: 180px;
+    }
+    .skillsTitle{
+        font-size: var(--normal-font-size);
+    }
+    .qualificationData{
+        gap: .5rem;
+    }
+    .servicesContainer{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+    .servicesContent{
+        padding-right:  3.5rem;
+    }
+    .servicesModal{
+        padding: 0 .5rem;
+    }
+}
+@media screen and (min-width:568px){
+    .homeContent{
+        grid-template-columns:  max-content 1fr 1fr;
+    }
+    .homeData{
+        grid-column: initial;
+    }
+    .homeImg{
+        order: 1;
+        justify-self: center;
+    }
+    .aboutContainer,
+    .skilsContainer,
+    .portfolioContainer,
+    .footerContainer,
+    .contactContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .qualificationSections{
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:768px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        margin: 0;
+    }
+    .section{
+        padding: 6rem 0 2rem;
+    }
+    .sectionSubTitle{
+        margin-bottom: 4rem;
+    }
+    .header{
+        top: 0;
+        bottom: initial;
+    }
+    .header,
+    .main,
+    .footerContainer{
+        padding: 0 1rem;
+    }
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 1rem;
+    }
+    .navIcon,
+    .navClose,
+    .navToggle{
+        display: none;
+    }
+    .navList{
+        display: flex;
+        column-gap: 2rem;
+    }
+    .navMenu{
+        margin-left: auto;
+    }
+    .change-theme{
+        margin: 0;
+    }
+    .homeContainer{
+        row-gap: 5rem;
+    }
+    .homeContent{
+       padding-top: 5.5rem;
+       column-gap: 2rem;
+    }
+    .homeSVG{
+        width: 270px;
+    }
+    .homeScroll{
+        display: block;
+    }
+    .homeScrollBtn{
+        margin-left: 3rem;
+    }
+    .aboutContainer{
+        column-gap:  5rem;
+    }
+    .aboutImg{
+        width: 350px;
+    }
+    .aboutDescription{
+        text-align: initial;
+    }
+    .aboutInfo{
+        justify-content: space-between;
+    }
+    .aboutBtn{
+        justify-content: initial;
+    }
+    .qualificationTabs{
+        justify-content: center;
+    }
+    .qualificationButton{
+        margin: 0 var(--mb-1);
+    }
+    .qualificationSections{
+        grid-template-columns: .5fr;
+    }
+    .servicesContainer{
+        grid-template-columns: repeat(3, 218px);
+        justify-content: center;
+    }
+    .servicesIcon{
+        font-size: 2rem;
+    }
+    .servicesContent{
+        padding: 6rem 0 2rem 2.5rem;
+    }
+    .servicesModalContent{
+        width: 450px;
+    }
+    .portfolioImg{
+        width: 320px;
+    }
+    .portfolioContent{
+        align-items: center;
+    }
+    .footerContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footerBg{
+        padding: 3rem 0 3.5rem;
+    }
+    .footerLinks{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .footerSocials{
+        justify-self: center;
+    }
+    .footerCopy{
+        margin-top: 4.5rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .header,
+    .main,
+    .footerContainer{
+        padding: 0;
+    }
+    .homeSVG{
+        width: 320px;
+    }
+    .homeSocial{
+        transform: translate(-6rem);
+    }
+    .servicesContainer{
+        grid-template-columns: repeat(3, 238px);
+    }
+    .portfolioContent{
+        column-gap: 5rem;
+    }
+    .swiperPortfolioIcon{
+        font-size: 3.5rem;
+    }
+    .swiper-button-prev{
+        left: -3.5rem;
+    }
+    .swiper-button-next{
+        right: -3.5rem;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: -4.5rem;
+    }
+    .contactForm{
+        width: 460px;
+    }
+    .contactInputs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
